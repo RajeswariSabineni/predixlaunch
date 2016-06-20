@@ -1,0 +1,35 @@
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 code script isotope-item"
+	ng-repeat="project in projects">
+
+	<div class="services-wrapper" id="_project_id_{{$index}}" style="word-wrap: break-word;">
+	<div id="_project_content_{{$index}}">
+		<a class="fancybox-media" title="{{project.title}}"
+			href="{{project.url}}" target="_blank"> 
+			<!-- <img src="{{project.imgSrc}}" class="img-responsive img-rounded" alt=""> -->
+			<div ng-if="project.imgSrc !=null">
+			 <img  src="{{project.imgSrc}}" class="img-responsive img-rounded" alt="">
+			 </div>
+			 <div ng-if="project.imgSrc ==null">
+			<img ng-src="data:image/jpeg;base64,{{project.blobImage}}" class="img-responsive img-rounded" alt=""
+			 />
+			 </div>
+			
+		</a>
+
+		<h4>{{project.projectName}}</h4>
+
+		<h5>{{project.projectDescription}}</h5>
+		 <div ng-if="project.docName !=null">
+		<ul class="nav">
+		<a ng-click="downLoad(project.projectId)">  Download Project Documents</a>
+		</ul>
+		</div>
+		
+		
+			
+			
+		
+	</div>
+	</div>
+</div>
+

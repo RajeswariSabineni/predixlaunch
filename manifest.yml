@@ -1,0 +1,13 @@
+---
+applications:
+- name: predix-launchapp-techm
+  buildpack: java_buildpack
+  path: \target\predixlaunch-0.0.1-SNAPSHOT.war
+  memory: 512MB
+  host: predix-launchapp-techm
+  services:
+  - postgres_sv1
+  - predix-uaa-techm
+  env:
+    UAA_SERVER_URL: https://9485afc0-3571-4a16-b680-b2a134a75a9b.predix-uaa.run.aws-usw02-pr.ice.predix.io/
+  

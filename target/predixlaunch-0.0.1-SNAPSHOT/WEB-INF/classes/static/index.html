@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>PREDIX pocs</title>
+
+
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+<!-- ION ICONS STYLES -->
+
+<link href="assets/css/ionicons.css" rel="stylesheet">
+
+<link href="assets/css/font-awesome.css" rel="stylesheet">
+
+<!-- FANCYBOX POPUP STYLES -->
+
+<link href="assets/js/source/jquery.fancybox.css" rel="stylesheet">
+
+<!-- STYLES FOR VIEWPORT ANIMATION -->
+
+<link href="assets/css/animations.min.css" rel="stylesheet">
+
+<!-- CUSTOM CSS -->
+
+<link href="assets/css/style-green.css" rel="stylesheet">
+
+<style type="text/css">
+
+input.ng-invalid {
+    background-color:pink;
+}
+
+
+.fancybox-margin {
+	margin-right: 17px;
+}
+
+div[id^="_project_id_"] {
+	border: 1px solid #005CB9;
+	background-color: rgba(73, 74, 76, 0.6);
+	border-radius: 3%;
+	  height: 375px;  
+}
+
+div[id^="_project_id_"]:hover {
+	background-color: rgba(73, 74, 76, 0.90);
+	border-radius: 3%;
+}
+
+div[id^="_project_content_"] {
+	padding: 3%;
+}
+
+div[id^="_service_content_"] {
+	background-color: rgba(0, 0, 0, 0.48) !important;
+	padding: 4%;
+    border-radius: 5px;	
+    height: 370px;  	
+}
+
+div[id^="_service_content_"]:hover {
+	background-color: rgba(0, 0, 0, 0.80) !important;
+	border: 1px solid rgba(238, 241, 71, 0.73);
+	
+}
+
+
+</style>
+
+</head>
+<body data-spy="scroll" data-target="#menu-section" ng-app="predixApp">
+	<div class="vegas-loading"></div>
+	<img class="vegas-background" src="assets/img/7.jpg"
+		style="position: fixed; left: 0px; top: -122px; width: 1366px; height: 867px; bottom: auto; right: auto;">
+	<div class="vegas-overlay"
+		style="margin: 0px; padding: 0px; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; background-image: url(&quot;assets/js/vegas/overlays/06.png&quot;);"></div>
+
+	<div class="navbar navbar-inverse navbar-fixed-top scroll-me"
+		id="menu-section">
+
+		<div class="container" >
+
+			<div class="navbar-header">
+
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+
+				</button>
+
+				<a class="navbar-brand" href="#"> Predix Journey </a>
+
+			</div>
+
+			<div class="navbar-collapse collapse">
+
+				<ul class="nav navbar-nav navbar-right">
+
+					<li class=""><a href="#home">HOME</a></li>
+
+					<!-- <li class=""><a href="#services">SERVICES</a></li>  -->
+					 <div style="float: left;">
+					<ul class="nav navbar-nav widths margins-21">
+						<li class="dropdown customize-class">
+						<a title="Customize" id="drop12" data-toggle="dropdown" class="dropdown-toggle">
+						WORK<b class="caret caret-margin"></b>
+						</a>
+						<ul class="dropdown-menu pull-right customize-child">
+								<li><a href="#work">POCs</a> </li>
+								<li><a href="#addnewpoc">Add POC</a></li>
+								
+				            </ul>
+						</li>
+					</ul>
+				</div>	
+					<li class="" ><a href="#team">TEAM</a></li>
+		         
+				</ul>
+				
+				
+
+			</div>
+			
+					
+ 
+			
+		</div>
+	</div>
+	<!--MENU SECTION END-->
+
+	<!--HOME SECTION START-->
+
+	<div id="home">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div
+					class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 ">
+
+					<div id="carousel-slider" data-ride="carousel"
+						class="carousel slide" data-anim-type="fade-in-up">
+
+
+
+						<div class="carousel-inner">
+
+							<div class="item active">
+
+
+
+								<h3 style="margin-right: 30px;">About Predix</h3>
+
+								<p style="color: #DAEF8A;">On Sept. 2015 GE has announced
+									the launch of Predix Cloud, the world’s first and only cloud
+									solution designed specifically for industrial data and
+									analytics. Predix is a powerful new software platform developed
+
+									specifically to connect people, data and machines over the
+									Industrial Internet for better business outcomes. Predix offers
+									a catalog of Services that provide core capabilities required
+									by Industrial Internet applications.</p>
+
+							</div>
+
+							<div class="item">
+
+								<h3 style="margin-right: 30px;">Predix Offerings</h3>
+
+								<p style="color: #DAEF8A;">
+
+									Collect key industrial data from your machines and stream it to
+									the Predix cloud.<br> Leverage services and development
+									tools, so you can focus on solving problems for customers.<br>
+
+									Use the Predix cloud to deploy scalable services and end-to-end
+									apps in secure environments.
+
+								</p>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row" data-anim-type="fade-in-up">
+
+				<div
+					class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2 scroll-me">
+
+					<p>Built on Cloud Foundry, Predix is optimized for secure
+						connectivity and analytics at scale - in the Cloud and on the Edge
+
+					</p>
+
+					<a href="#services" class=" btn button-custom btn-custom-two">See
+						Service List </a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--SERVICE SECTION START-->
+
+	<section id="services">
+
+		<div class="container">
+
+			<!-- <div class="row text-center header">
+
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
+					data-anim-type="fade-in-up">
+					<h3>Our Services</h3>
+					<hr>
+				</div>
+			</div> -->
+
+			<div class="row" data-anim-type="fade-in-up"
+				ng-controller="PredixAppController">
+
+				<div class="row text-center isotope" data-anim-type="fade-in-up"
+					id="work-div"
+					style="position: relative; overflow: hidden; height: 899px;"
+					ng-controller="PredixAppController">
+					<predix-services services="services"></predix-services>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<!--SERVICE SECTION END-->
+
+	<!--WORK SECTION START-->
+
+	<section id="work">
+
+		<div class="container"  ng-controller="PredixAppController">
+
+			<div class="row text-center header" data-anim-type="fade-in-up">
+
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+					<h3>Our Works</h3>
+					<hr>
+				</div>
+			</div>
+
+			<!-- <div class="row text-center isotope" data-anim-type="fade-in-up" id="work-div" style="position: relative; overflow: hidden; height: 899px;"
+			 	ng-controller="PredixAppController as predixAppCtrl"> -->
+
+
+			<!-- <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 code script isotope-item" id="project_id_{{$index}}"
+					style="position: absolute; left: 0px; top: 0px; transform: {{predixApp.position}};" ng-repeat="predixApp in predixAppCtrl.projects">
+
+					<div class="work-wrapper">
+						<a class="fancybox-media"
+							title="{{predixApp.title}}"
+							href="https://predix-irevbasic-poc.run.aws-usw02-pr.ice.predix.io/"
+							target="_blank"> <img
+							src="{{predixApp.imgSrc}}"
+							class="img-responsive img-rounded" alt="">
+						</a>
+
+						<h4>{{predixApp.projectName}}</h4>
+
+						<h5>{{predixApp.projectDescription}}</h5>
+					</div>
+				</div> -->
+
+			<!-- <predix-projects projects="predixAppCtrl.projects"></predix-projects>
+			</div> -->
+
+
+
+			<div class="row" data-anim-type="fade-in-up"
+				ng-controller="PredixAppController as predixAppCtrl">
+
+				<div class="row text-center isotope" data-anim-type="fade-in-up"
+					id="work-div"
+						style="position: relative; overflow: auto; height: 899px;"
+					ng-controller="PredixAppController as predixAppCtrl">
+					<predix-projects projects="predixAppCtrl.projects"></predix-projects>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<!--WORK SECTION END-->
+
+	<!--TEAM SECTION START-->
+
+	<section id="team">
+
+		<div class="container">
+
+			<div class="row text-center header" data-anim-type="fade-in-up">
+
+				<div
+					class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4 col-sm-offset-4">
+
+					<h3>Team Members</h3>
+
+					<hr>
+
+				</div>
+
+			</div>
+
+			<div class="row" data-anim-type="fade-in-up">
+
+				<div
+					class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4 col-sm-offset-4">
+
+					<div class="team-wrapper">
+
+						<div class="team-inner"
+							style="background-image: url(&#39;assets/img/team/team.png&#39;)">
+
+							<a
+								href="#team"
+								target="_blank"> <i class="fa fa-twitter"></i></a>
+
+						</div>
+
+						<div class="description">
+
+							<h3>Predix Army</h3>
+
+							<h5>
+								<strong> A Group of Predix Inquisitives </strong>
+							</h5>
+
+							<p>Team exploring all the dimensions of Predix.</p>
+
+								<p>© Tech Mahindra Ltd.</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<!--TEAM SECTION END-->
+
+<!--  ADD NEW POC OR DOCUMENT -->
+
+<section id="addnewpoc">
+
+		         <div class="container">
+		         <div class="row text-center header" data-anim-type="fade-in-up">
+
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+					<h3>Add/Edit POC</h3>
+					<hr>
+				</div>
+			</div>
+	           <div class="row" data-anim-type="fade-in-up" style="margin-left: 20%"
+				ng-controller="PredixAppController as predixAppCtrl">
+
+				<div class="row text-left isotope" data-anim-type="fade-in-up"
+					id="work-div"
+					style="position: relative; overflow: hidden; height: 899px;"
+					ng-controller="PredixAppController as predixAppCtrl">
+					<predix-projectsnew projects="predixAppCtrl.projectsnew"></predix-projectsnew>
+				</div>
+			   </div>
+					</div>
+
+		</section>
+
+
+<!--  END -->
+
+	<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME -->
+
+	<!-- CORE JQUERY -->
+	<script src="assets/bower_components/angular/angular.js"></script>
+	<script src="assets/bower_components/angular-route/angular-route.js"></script>
+	<script src="assets/js/angular/app.js"></script>
+
+	<script src="assets/js/jquery-1.11.1.js"></script>
+
+	<!-- BOOTSTRAP SCRIPTS -->
+
+	<script src="assets/js/bootstrap.js"></script>
+
+	<!-- EASING SCROLL SCRIPTS PLUGIN -->
+
+	<script src="assets/js/jquery.vegas.min.js"></script>
+
+	<!-- VEGAS SLIDESHOW SCRIPTS -->
+
+	<script src="assets/js/jquery.easing.min.js"></script>
+
+	<!-- FANCYBOX PLUGIN -->
+
+	<script src="assets/js/source/jquery.fancybox.js"></script>
+
+	<!-- ISOTOPE SCRIPTS -->
+
+	<script src="assets/js/jquery.isotope.js"></script>
+
+	<!-- VIEWPORT ANIMATION SCRIPTS   -->
+
+	<script src="assets/js/appear.min.js"></script>
+
+	<script src="assets/js/animations.min.js"></script>
+
+	<!-- CUSTOM SCRIPTS -->
+
+	<script src="assets/js/custom.js"></script>
+
+
+</body>
+</html>
